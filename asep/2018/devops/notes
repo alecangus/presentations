@@ -1,0 +1,105 @@
+Git branching
+AWS pre-reqs
+Wild Rydes AWS - https://github.com/aws-samples/aws-serverless-workshops
+
+"People are squishy"
+You're not going to like this - Firstly it's a fluffy topic; nothing concrete like distributed hash tables. Second, it's about talking with one another and thirdly it's about recognising the developer isn't the centre of the universe but rather there is a whole team of people required to get ideas into production.
+
+What and Why?
+"a set of practices intended to reduce the time between committing a change to a system and the change being placed into normal production, while ensuring high quality". - DevOps, A Software Architect's Perspective, 
+	However, I'd go further and suggest we start the clock earlier than with the first commit. Borne out of the success of Agile - we can now get software written wicked fast, then it waits three weeks to be deployed...
+Someone first put a name to it in 2009 in Belgium with the beginning of a conference called DevOpsDays.
+The crazy idea that maybe developers and operations should work together?!!
+Shorten the lead time! Always shorten the lead time.
+	It's the acknowledgement that development time is a tiny part of delivery; even if development took zero time, how long would it still take to get a feature to production?
+
+What It's Not
+	They took our jobs meme
+	It's not Dev now having to do Ops too.
+	It's not Ops no longer having a job
+	It's not outsourcing all your sysadmin work
+	It's not just tooling
+
+Who's involved?
+CISO
+Dev
+Change Management
+Infra
+DBAs
+Ops
+SREs
+PO
+
+Normally these things would start with a lesson in history where I set up some straw man argument about some archaic waterfall disaster project but seeing as that's never really been my experience and I'm much older than you, it's unlikely to be your experience either. Much more likely you're going to enter teams who claim to be fully Agile but in reality lie somewhere on a sliding scale of Agile where one end is far worse than Waterfall...
+
+But even if you think you're really agile; i.e. you're making your changes in production as fast as the business can think of them, what disruption are these changes causing? Did you ever go back and ask users what impact your changes have had? How much more memory or network load did your change require *in production*. I know you tested it before release, but that's in test.
+
+The problem I think you're going to face is that by all the hallmarks your team is Agile but after a while you're going to realise it's still really difficult to deliver software.
+
+Raise your had if you did a summer placement
+Keep raised if:
+	The company you worked for were under the impression they were Agile
+	You were under the impression you were working Agile
+	... lots of questions questioning what Agile is
+
+
+A tale of three jobs, all under the impression they're Agile.
+ - Velos-IT where requirements came in, development was done, and once it was complete it was written to CD on my dev machine and carried to the server room
+ - EDPI
+ - GIM
+
+Be wary of being a Cargo Cult
+
+Explain value streams vs org charts
+
+Much in the same way that love is a verb, DevOps is a practice and a culture.
+
+Automation
+	Build Automation
+Version Control
+CI/CD
+QA (testing)
+Static Analysis
+Circuit breaking
+Auto-config
+	CI
+		Mainline development
+	CD
+		This might not be all the way to prod
+	SRE
+		In 2003, Google developed Site Reliability Engineering: an approach for releasing new features continuously into large-scale high-availability systems while maintaining high-quality end user experience.
+	Event monitoring
+	Circuit breaking
+	Auto-config
+
+
+The four types of work
+
+The three ways
+
+SRE is one way to implement DevOps -https://www.youtube.com/watch?v=uTEL8Ff1Zvk&t=6s
+Five tenents of DevOps:
+	Reduce organisational silos
+	Accept failure as normal
+	Implement gradual change
+	Leverage tooling and automation
+	Measure everything
+Five ways SRE is DevOps:
+	Share ownership
+	SLOs and Blameless Post Mortems
+	Reduce cost of failure
+	Automate this year's job away
+	Measure toil and reliability
+
+SLO: Service Level Objectives: Did we run fast and slow enough over the year?
+SLI: Service Level Indicator: Request Latency, Batch Throughput, Failures per request
+SLA: Service Level Agreement: What am I going to do if I don't offer the service I promised
+
+Reading List
+The Phoenix Project - Gene Kim, George Spafford, Kevin Behr
+	Beware nightmares
+The DevOps Handbook - Gene Kim, George Spafford, Kevin Behr
+Humble Bundle
+
+
+	
